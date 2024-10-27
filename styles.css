@@ -1,0 +1,98 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6edf5; /* Light blue background to match design */
+    color: #3a5a7d; /* Dark blue text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.contact-info {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #3a5a7d;
+}
+
+.contact-method {
+    color: #3a5a7d;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.illustration {
+    margin-top: 2em;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    .illustration {
+        max-width: 300px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 501px) and (max-width: 1024px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .illustration {
+        max-width: 600px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1.1em;
+    }
+}
+
+.contact-method a, .contact-info a {
+    color: #3a5a7d;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.contact-method a:hover, .contact-info a:hover {
+    color: #d9534f; /* Slightly different color on hover for emphasis */
+}
